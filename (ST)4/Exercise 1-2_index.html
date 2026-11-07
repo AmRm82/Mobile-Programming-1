@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>صفحه معرفی دانشجو</title>
+
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #eef3fb;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 400px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      color: #1a3d7c;
+    }
+    p {
+      font-size: 18px;
+      color: #333333;
+      margin: 8px 0;
+    }
+    button {
+      margin-top: 16px;
+      padding: 10px 24px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #3880ff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2f6ad9;
+    }
+    #message {
+      margin-top: 16px;
+      font-size: 18px;
+      color: #1b7f3b;
+      min-height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>معرفی دانشجو</h1>
+    <p>نام دانشجو: امیرعلی مدانلو</p>
+    <p>رشته تحصیلی: مهندسی حرفه ای کامپیوتر</p>
+    <p>دانشگاه: دانشگاه ملی مهارت مازندران</p>
+
+    <!-- تمرین دوم -->
+    <button onclick="showMessage()">نمایش پیام</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "به برنامه خوش آمدید";
+    }
+  </script>
+</body>
+</html>
